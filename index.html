@@ -15,20 +15,22 @@
 
   <header class="header">
 
-    <img class="page-header__logo" src="http://placehold.it/100x80" alt="Logo City of Sedona">
-    <div class="btn  mobile-menu__open"></div>
+
+    <div class="page-header__logo btn __mobile-menu">
+      <img src="http://placehold.it/100x80" alt="Logo City of Sedona">
+    </div>
 
     <nav class="main-menu  main-menu__close" role="navigation">
-      <a href="#" class="main-menu__item  main-menu__item--active">Главная</a>
-      <a href="#" class="main-menu__item">Фото и видео</a>
-      <a href="#" class="main-menu__item">Форма отзыва</a>
-      <a href="#" class="main-menu__item">HTML academy</a>
+      <li class="main-menu__item  main-menu__item--active"><a href="#">  Главная       </a></li>
+      <li class="main-menu__item"><a href="#">                           Фото и видео  </a></li>
+      <li class="main-menu__item"><a href="#">                           Форма отзыва  </a></li>
+      <li class="main-menu__item"><a href="#">                           HTML academy  </a></li>
     </nav>
 
   </header>
 
 
-  <main class="main" role="main">
+  <main class="page-container" role="main">
 
     <section class="intro" role="complementary">>
 
@@ -36,74 +38,83 @@
         <img class="welcome-Sedona" src="http://placehold.it/320x389" alt="welcome to Sedona">
       </div>
       <div class="intro__description">
-        <h1 role="definition">Седона — небольшой  городок в Аризоне,  заслуживающий большего!</h1>
-        <p>рассмотрим 5 причин почему Седона круче, чем Гранд Каньон!</p>
+        <h1 class="intro__description__title" role="definition">Седона — небольшой  городок в Аризоне,  заслуживающий большего!</h1>
+        <p class="intro__description__content">рассмотрим 5 причин почему Седона круче, чем Гранд Каньон!</p>
       </div>
 
     </section>
 
+    <section class="reasons" role="region">
 
-    <section class="reason" role="region">
+      <section class="reason" role="region">
 
-      <h1 class="reason__title">настоящий городок</h1>
-      <p class="reason__number">— №1 —</p>
-      <p class="reason__content">Седона не атракцион для туристов, там течет своя жизнь</p>
-      <img src="http://placehold.it/320x260" alt="Sedona town">
+        <section class="reason" role="region">
 
+          <h1 class="reason__title">настоящий городок</h1>
+          <p class="reason__number">— №1 —</p>
+          <p class="reason__content">Седона не атракцион для туристов, там течет своя жизнь</p>
+          <img src="http://placehold.it/320x260" alt="Sedona town">
 
-      <article class="feature" role="article">
-
-        <h2 class="feature__title">Жилье</h2>
-        <p class="feature__content">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-      </article>
-
-      <article class="feature" role="article">
-        <h2 class="feature__title">Сувениры</h2>
-        <p class="feature__content">Не только китайского, но и местного производства!</p>
-      </article>
-
-      <article class="feature" role="article">
-        <h2 class="feature__title">Eда</h2>
-        <p class="feature__content">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
-
-      </article>
-
-    </section>
+        </section>
 
 
-    <section class="reason" role="region">
+        <section class="features">
 
-      <h1 class="reason__title">Там есть Мост дьявола</h1>
-      <p class="reason__number">— №2 —</p>
-      <p class="reason__content">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-      <img src="http://placehold.it/320x260" alt="devil's Bridge">
+          <article class="features__item" role="article">
+            <h2 class="feature__title">Жилье</h2>
+            <p class="feature__content">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+          </article>
 
-    </section>
+          <article class="features__item" role="article">
+            <h2 class="feature__title">Сувениры</h2>
+            <p class="feature__content">Не только китайского, но и местного производства!</p>
+          </article>
 
+          <article class="features__item" role="article">
+            <h2 class="feature__title">Eда</h2>
+            <p class="feature__content">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
+          </article>
 
-    <section class="reason" role="region">
+        </section>
 
-      <h1 class="reason__title">Небольшая прощадь</h1>
-      <p class="reason__number">— №3 —</p>
-      <p class="reason__content">Все достопримечательности находятся очень близко</p>
-
-    </section>
-
-
-    <section class="reason" role="region">
-
-      <h1 class="reason__title">Красивая дорога</h1>
-      <p class="reason__number">— №4 —</p>
-      <p class="reason__content">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-
-    </section>
+      </section>
 
 
-    <section class="reason" role="region">
+      <section class="reason" role="region">
 
-      <h1 class="reason__title">Мало туристов</h1>
-      <p class="reason__number">— №5 —</p>
-      <p class="reason__content">Большинство едет в гранд каньон и толпится там</p>
+        <h1 class="reason__title">Там есть Мост дьявола</h1>
+        <p class="reason__number">— №2 —</p>
+        <p class="reason__content">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+        <img src="http://placehold.it/320x260" alt="devil's Bridge">
+
+      </section>
+
+
+      <section class="reason" role="region">
+
+        <h1 class="reason__title">Небольшая прощадь</h1>
+        <p class="reason__number">— №3 —</p>
+        <p class="reason__content">Все достопримечательности находятся очень близко</p>
+
+      </section>
+
+
+      <section class="reason" role="region">
+
+        <h1 class="reason__title">Красивая дорога</h1>
+        <p class="reason__number">— №4 —</p>
+        <p class="reason__content">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+
+      </section>
+
+
+      <section class="reason" role="region">
+
+        <h1 class="reason__title">Мало туристов</h1>
+        <p class="reason__number">— №5 —</p>
+        <p class="reason__content">Большинство едет в гранд каньон и толпится там</p>
+
+      </section>
 
     </section>
 
