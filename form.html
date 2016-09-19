@@ -13,22 +13,28 @@
 </head>
 <body>
 
-
   <header class="header">
 
-    <img class="page-header__logo--smal" src="http://placehold.it/100x80" alt="Logo City of Sedona">
-    <div class="btn  mobile-menu__open"></div>
+    <div class="page-header__logo btn __mobile-menu">
+      <img src="http://placehold.it/100x80" alt="Logo City of Sedona">
+    </div>
 
-    <nav class="main-menu  main-menu__close" role="navigation">
-      <a href="#" class="main-menu__item">Главная</a>
-      <a href="#" class="main-menu__item">Фото и видео</a>
-      <a href="#" class="main-menu__item  main-menu__item--active">Форма отзыва</a>
-      <a href="#" class="main-menu__item">HTML academy</a>
+    <nav class="main-menu  main-menu__closed" role="navigation">
+
+      <button class="main-menu__btn" type="button">Открыть меню</button>
+
+      <div class="main-menu__items">
+        <li class="main-menu__item  main-menu__item--active"><a href="#">  Главная       </a></li>
+        <li class="main-menu__item"><a href="#">                           Фото и видео  </a></li>
+        <li class="main-menu__item"><a href="#">                           Форма отзыва  </a></li>
+        <li class="main-menu__item"><a href="#">                           HTML academy  </a></li>
+      </div>
+
     </nav>
 
   </header>
 
-  <main class="main" role="main">
+  <main class="page-container" role="main">
 
     <section class="intro" role="complementary">
 
