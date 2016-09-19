@@ -13,22 +13,28 @@
 </head>
 <body>
 
+  <header class="page-header">
 
-  <header class="header">
+    <div class="page-header__logo btn __mobile-menu">
+      <img src="http://placehold.it/100x80" alt="Logo City of Sedona">
+    </div>
 
-    <img class="page-header__logo--smal" src="http://placehold.it/100x80" alt="Logo City of Sedona">
-    <div class="btn  mobile-menu__open"></div>
+    <nav class="main-menu  main-menu__closed" role="navigation">
 
-    <nav class="main-menu  main-menu__close" role="navigation">
-      <a href="#" class="main-menu__item">Главная</a>
-      <a href="#" class="main-menu__item">Фото и видео</a>
-      <a href="#" class="main-menu__item  main-menu__item--active">Форма отзыва</a>
-      <a href="#" class="main-menu__item">HTML academy</a>
+      <button class="main-menu__btn" type="button">Открыть меню</button>
+
+      <div class="main-menu__items">
+        <li class="main-menu__item  main-menu__item--active"><a href="#">  Главная       </a></li>
+        <li class="main-menu__item"><a href="#">                           Фото и видео  </a></li>
+        <li class="main-menu__item"><a href="#">                           Форма отзыва  </a></li>
+        <li class="main-menu__item"><a href="#">                           HTML academy  </a></li>
+      </div>
+
     </nav>
 
   </header>
 
-  <main class="main" role="main">
+  <main class="page-container" role="main">
 
     <section class="intro" role="complementary">
 
@@ -141,17 +147,17 @@
   </main>
 
 
-  <footer class="footer" role="contentinfo">
+  <footer class="page-footer" role="contentinfo">
 
-    <p class="footer__twit">#VISITSEDONA</p>
+    <p class="page-footer__twit">#VISITSEDONA</p>
     <div class="social">
       <a class="social__item social__item--tw" href="#"></a>
       <a class="social__item social__item--fb" href="#"></a>
       <a class="social__item social__item--yb" href="#"></a>
     </div>
-    <p class="footer__copyright">
+    <p class="page-footer__copyright">
       Разработано:
-      <a class="footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
     </p>
 
   </footer>
