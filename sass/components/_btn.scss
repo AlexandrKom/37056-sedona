@@ -1,0 +1,38 @@
+/* buttons and any modifications
+******************************************/
+
+.btn {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+  cursor: pointer;
+
+  &:focus {
+    outline:none;
+  }
+}
+
+
+.interesting__btn,
+.form-feedback__btn {
+  display: block;
+  font-size: 21px;
+  line-height: 58px;
+  font-weight: 800;
+  color: #fff;
+  background-color: #81b3d2;
+
+  &:hover {
+    color: #fff;
+    background-color: #669ec0;
+  }
+}
+
+.form-feedback__btn {
+  margin: 0 20px;
+}
+
+

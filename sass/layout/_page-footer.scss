@@ -1,0 +1,56 @@
+/* FOOTER
+******************************************/
+
+
+.page-footer {
+  padding: 35px 0;
+}
+
+.page-footer__twit {
+  font-size: 21px;
+  line-height: 25px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.page-footer__social {
+  margin-bottom: 40px;
+}
+
+.page-footer__copyright {
+  line-height: 26px;
+}
+
+.social__item {
+  display: inline-block;
+  vertical-align: middle;
+  width: 47px;
+  height: 47px;
+  font-size: 0;
+  overflow: hidden;
+  background-color: #81b3d2;
+}
+
+.social__item--tw {
+  padding-top: 16px;
+  padding-left: 2px;
+}
+
+.social__item--fb {
+  padding-top: 14px;
+}
+
+.social__item--yb {
+  padding-top: 17px;
+}
+
+.page-footer__copyright-link {
+  display: inline-block;
+  vertical-align: middle;
+  word-spacing: 10px;
+}
+
+.logo-academy {
+  vertical-align: middle;
+}
+
