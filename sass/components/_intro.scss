@@ -1,0 +1,31 @@
+/* intro block
+******************************************/
+
+.intro__img {
+  height: 390px;
+  background: url(../img/text-sedona-index.svg) no-repeat center top 91px,
+              url(../img/bg-intro-triangle-mobile.svg) no-repeat center bottom -3px,
+              url(../img/bg-back-mobile@1x.jpg) no-repeat center bottom;
+  background-size: 280px auto, 110% 26px, 768px auto;
+  margin-bottom: 40px;
+}
+
+.description__title {
+  margin: 0 20px 30px 20px;
+  color: #000;
+  text-align: center;
+}
+
+.description__content {
+  margin: 0 20px 30px 20px;
+  text-align: center;
+}
+
+.intro__img.mini {
+  height: 160px;
+  background: url(../img/text-sedona.svg) no-repeat center top 52px,
+              url(../img/bg-intro-triangle-mobile.svg) no-repeat center bottom -3px,
+              url(../img/bg-back-mobile@1x.jpg) no-repeat center top -229px;
+  background-size: 230px auto, 110% 26px, auto;
+}
+

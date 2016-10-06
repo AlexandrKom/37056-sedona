@@ -1,0 +1,84 @@
+/* photo block
+******************************************/
+
+.photo {
+  border-top: 1px solid #e5e5e5;
+  text-align: left;
+}
+
+.photo-link,
+.photo__title,
+.photo__author,
+.photo__like {
+  margin: 0 20px;
+}
+
+.photo-link {
+  display: block;
+  height: 302px;
+  margin-top: 22px;
+  margin-bottom: 14px;
+}
+
+.spaces {
+  background: url(../img/photo-1-mobile@1x.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.vegetation {
+  background: url(../img/photo-2-mobile@1x.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.road {
+  background: url(../img/photo-3-mobile@1x.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.bridge {
+  background: url(../img/photo-4-mobile@1x.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.photo__title {
+  line-height: 24px;
+  font-size: $base-font-size+px;
+  font-weight: 800;
+}
+
+.photo__author{
+  line-height: 24px;
+  font-weight: normal;
+  text-transform: none;
+  margin-bottom: 5px;
+}
+
+.photo__like {
+  margin-bottom: 18px;
+}
+
+.photo__like-btn {
+  font-size: 0;
+  width: 23px;
+  height: 21px;
+  margin-right: 10px;
+  background: url(../img/icon-like.svg) no-repeat center;
+  border: none;
+  vertical-align: middle;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.photo__like-count {
+  vertical-align: middle;
+}
+
+
+
+

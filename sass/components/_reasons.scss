@@ -1,0 +1,22 @@
+/* reasons block
+******************************************/
+
+.reasons {
+  padding: 0 20px;
+  background-color: #eeeeee;
+
+  .reason {
+    color: #333333;
+    padding: 40px 0 0 0;
+    background-color: #eeeeee;
+    border-bottom: 1px solid #d6d6d6;
+
+    .reason-title {
+    color: #000;
+    }
+  }
+
+  .reason:last-child {
+    border-bottom: none;
+  }
+}

@@ -1,0 +1,123 @@
+.form-feedback fieldset {
+  border: none;
+  border-top: 1px solid #e5e5e5;
+}
+
+.form-feedback__fieldset {
+  padding: 17px 20px 27px 20px;
+}
+
+.form-feedback__title {
+  margin-bottom: 21px;
+  color: #000;
+}
+
+.form-feedback__title.align-left {
+  text-align: left;
+}
+
+.form-feedback__label {
+  display: block;
+  float: left;
+  width: 100%;
+  margin-bottom: 21px;
+  text-align: left;
+  line-height: 56px;
+}
+
+.form-feedback__input[type="text"] {
+  width: 70%;
+  float: right;
+}
+
+.form-feedback__label:first-of-type .form-feedback__input[type="text"] {
+  width: 80%;
+  float: right;
+}
+
+.form-feedback input[type="text"], .form-feedback input[type="tel"], .form-feedback input[type="email"] {
+  border: none;
+  padding: 0 20px;
+  font-size: $base-font-size*1.285714+px;
+  line-height: 57px;
+  font-weight: 800;
+  color: #000;
+  text-transform: none;
+  background-color: #f2f2f2;
+}
+
+.form-feedback__input-tel,
+.form-feedback__input-email {
+  text-indent: 20px;
+  margin-bottom: 10px;
+}
+
+input-wrapper {
+  position: relative;
+}
+
+input-wrapper::after{
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  width: 57px;
+  height: 57px;
+  content: "";
+  background-color: #e6e6e6;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.form-feedback input[type="tel"], .form-feedback input[type="email"] {
+  width: 100%;
+  margin-left: -20px;
+}
+
+.form-feedback__error--tel {
+  color: #ff5c5c;
+  font-family: "Times New Roman", serif;
+  text-transform: none;
+}
+
+// radio & checkbox
+
+.form-feedback__label--radio,
+.form-feedback__label--checkbox{
+  display: block;
+  height: 55px;
+  margin-bottom: 13px;
+  text-align: left;
+  font-size: $base-font-size*1.285714+px;
+  font-weight: bold;
+  text-transform: none;
+}
+
+.form-feedback__input--hidden {
+  display: none;
+}
+
+.form-feedback__radio-bg,
+.form-feedback__checkbox-bg{
+  display: inline-block;
+  height: 55px;
+  width: 55px;
+  margin-right: 20px;
+  vertical-align: middle;
+}
+
+//textarea
+
+.feedback-form__textarea {
+  width: 100%;
+  margin-top: 20px;
+  padding: 15px 20px;
+  resize: none;
+  font-size: $base-font-size*1.285714+px;
+  font-weight: 800;
+  line-height: 25px;
+  color: #000;
+  text-transform: none;
+  background-color: #f2f2f2;
+  border: none;
+}

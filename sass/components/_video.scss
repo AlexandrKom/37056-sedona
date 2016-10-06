@@ -1,0 +1,34 @@
+/* video block
+******************************************/
+
+.video {
+  padding: 31px 20px 0 20px;
+  border-top: 1px solid #e5e5e5;
+}
+.video__title {
+  margin-bottom: 25px;
+}
+
+.video__description {
+  margin-bottom: 35px;
+}
+
+.video__frame{
+  position: relative;
+  height: 202px;
+  background: url(../img/video-mobile@1x.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.video__navigation {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 110px;
+  padding: 0 21px;
+  background: rgba(0, 0, 0, 0.5) url(../img/controls-bg.jpg) no-repeat center bottom;
+  background-size: 100% 63px;
+}
