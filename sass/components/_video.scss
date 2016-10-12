@@ -2,15 +2,17 @@
 ******************************************/
 
 .video {
-  padding: 31px 20px 0 20px;
+  padding: 31px 0 0 0;
   border-top: 1px solid #e5e5e5;
 }
 .video__title {
-  margin-bottom: 25px;
+  margin-bottom: 30px;
 }
 
 .video__description {
   margin-bottom: 35px;
+  padding: 0 30px;
+  line-height: 24px;
 }
 
 .video__frame{
@@ -24,11 +26,59 @@
   position: absolute;
   bottom: 0;
   left: 0;
-  display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   height: 110px;
   padding: 0 21px;
   background: rgba(0, 0, 0, 0.5) url(../img/controls-bg.jpg) no-repeat center bottom;
   background-size: 100% 63px;
+}
+
+
+//********* tablet 768px
+
+@media (min-width: 768px) {
+  .video {
+    float: left;
+    border-top: none;
+    padding-top: 60px;
+  }
+
+  .video__title {
+    font-size: $base-font-size*2.14285+px;
+    margin-bottom: 23px;
+  }
+
+  .video__description {
+    padding: 0 16%;
+    margin-bottom: 72px;
+  }
+
+  .video__frame {
+    height: 500px;
+  }
+}
+
+//********* desktop 1000px
+
+@media (min-width: 1000px) {
+
+  .video {
+    width: 100%;
+    padding-top: 63px;
+  }
+
+  .video__description {
+    padding: 0 32%;
+  }
+
+  .video__frame {
+     margin: 0 17%;
+  }
+
+  .video__navigation {
+    width: 100%;
+    height: 94px;
+  }
+
 }

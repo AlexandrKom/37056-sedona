@@ -8,7 +8,7 @@
 }
 
 .reason__decorative {
-  padding-top: 65px;
+  padding-top: 76px;
   background: #81b3d2 url(../img/bg-triangle.svg) no-repeat center top;
 }
 
@@ -17,7 +17,7 @@
 }
 
 .reason__number {
-  padding-bottom: 10px;
+  padding-bottom: 17px;
 }
 
 .reason__img {
@@ -27,9 +27,60 @@
 
 .reason__content {
   padding-bottom: 40px;
+  line-height: 21px;
 }
 
 .real-city {
   background: url(../img/photo-city@1x.jpg) no-repeat center;
   background-size: cover;
+}
+
+.devils-bridge {
+  background: url(../img/photo-bridge@1x.jpg) no-repeat center;
+  background-size: cover;
+}
+
+
+//********* tablet 768px
+
+@media (min-width: 768px) {
+
+  .reason {
+    padding: 0;
+    @include clear;
+  }
+
+  .reason__wrapper-left,
+  .reason__wrapper-rigth {
+    float: left;
+    width: 100/3+%;
+    padding: 43px 20px 0 20px;
+    line-height: 28px;
+    background-color: $reason-bgcolor;
+  }
+
+  .reason__wrapper-rigth {
+    float: right;
+  }
+
+  .reason__title {
+    padding-bottom: 3px;
+    font-size: $base-font-size*1.5+px;
+  }
+
+  .reason__number {
+    padding-bottom: 19px;
+  }
+
+  .reason__content {
+    padding: 0 25px;
+  }
+
+  .reason__img {
+    float: left;
+    min-height: 256px;
+    width: 100/3*2+%;
+    margin: 0;
+  }
+
 }

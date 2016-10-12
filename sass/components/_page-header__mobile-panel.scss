@@ -18,6 +18,7 @@
 }
 
 .page-header__btn-open {
+  display: inline-block;
   position: absolute;
   top: 17px;
   right: 20px;
@@ -41,4 +42,15 @@
 }
 
 
+@media (min-width: 750px) {
 
+  .page-header__mobile-panel {
+    position: static;
+    min-height: auto;
+  }
+
+  .page-header__btn-open {
+    display: none;
+  }
+
+}

@@ -13,6 +13,14 @@ body {
   background-color: #fff;
 }
 
+@media (min-width: 1200px) {
+
+  body {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
+
 h1, h2 {
   font-size: $base-font-size*1.285714+px;
   font-weight: 800;
@@ -26,4 +34,6 @@ p {
 a, a:hover {text-decoration: none; color: inherit;}
 
 img {vertical-align: middle}
+
+
 

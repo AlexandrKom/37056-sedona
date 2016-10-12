@@ -17,29 +17,32 @@
 
   <header class="page-header">
 
-    <div class="page-header__logo btn __mobile-menu">
-      <img src="http://placehold.it/100x80" alt="Logo City of Sedona">
-    </div>
-
     <nav class="main-menu  main-menu__closed" role="navigation">
 
-      <div class="main-menu__items">
-        <li class="main-menu__item"><a href="#">                            Главная       </a></li>
-        <li class="main-menu__item  main-menu__item--active"><a href="#">   Фото и видео  </a></li>
-        <li class="main-menu__item"><a href="#">                            Форма отзыва  </a></li>
-        <li class="main-menu__item"><a href="#">                            HTML academy  </a></li>
-      </div>
+      <ul class="main-menu__items">
+        <li class="main-menu__item  main-menu__item--active"><a href="#">  Главная       </a></li>
+        <li class="main-menu__item"><a href="#">                           Фото и видео  </a></li>
+        <li class="main-menu__item"><a href="#">                           Форма отзыва  </a></li>
+        <li class="main-menu__item"><a href="#">                           HTML academy  </a></li>
+        <button class="btn main-menu__btn-close">Скрыть меню</button>
+      </ul>
 
     </nav>
 
-  </header>
+    <div class="page-header__mobile-panel">
 
+      <img class="page-header__logo" src="img/logo-sedona-mobile.svg" alt="Logo City of Sedona">
+      <button class="btn page-header__btn-open">Показать меню</button>
+
+    </div>
+
+  </header>
 
   <main class="page-container" role="main">
 
-    <section class="intro" role="complementary">
+    <section class="intro  mini  media" role="complementary">
 
-      <div class="intro__img  mini"></div>
+      <div class="intro__img"></div>
       <div class="intro__description">
         <h1 class="description__title" role="definition">Фото и видео</h1>
         <p class="description__content">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
@@ -53,12 +56,19 @@
       <article class="photo">
 
         <a class="photo-link spaces" href="#"></a>
-        <h2 class="photo__title">Неродные просторы</h2>
-        <p class="photo__author">Автор фото: Борис</p>
-        <div class="photo__like">
-          <button class="photo__like-btn">Лайк!</button>
-          <span class="photo__like-count">1350</span>
+
+        <div class="photo__wrap">
+
+          <h2 class="photo__title">Неродные просторы</h2>
+          <p class="photo__author">Автор фото: Борис</p>
+          <div class="photo__like">
+            <button class="photo__like-btn">Лайк!</button>
+            <span class="photo__like-count">1350</span>
+
+          </div>
+
         </div>
+
 
       </article>
 
@@ -66,11 +76,16 @@
       <article class="photo">
 
         <a class="photo-link vegetation" href="#"></a>
-        <h2 class="photo__title">Местная растительность</h2>
-        <p class="photo__author">Автор фото: Сергей</p>
-        <div class="photo__like">
-          <button class="photo__like-btn">Лайк!</button>
-          <span class="photo__like-count">143</span>
+
+        <div class="photo__wrap">
+
+          <h2 class="photo__title">Местная растительность</h2>
+          <p class="photo__author">Автор фото: Сергей</p>
+          <div class="photo__like">
+            <button class="photo__like-btn">Лайк!</button>
+            <span class="photo__like-count">143</span>
+          </div>
+
         </div>
 
       </article>
@@ -79,11 +94,16 @@
       <article class="photo">
 
         <a class="photo-link road" href="#"></a>
-        <h2 class="photo__title">Дорога на север</h2>
-        <p class=" photo__author">Автор фото: Петр</p>
-        <div class="photo__like">
-          <button class="photo__like-btn">Лайк!</button>
-          <span class="photo__like-count">96</span>
+
+        <div class="photo__wrap">
+
+          <h2 class="photo__title">Дорога на север</h2>
+          <p class=" photo__author">Автор фото: Петр</p>
+          <div class="photo__like">
+            <button class="photo__like-btn">Лайк!</button>
+            <span class="photo__like-count">96</span>
+          </div>
+
         </div>
 
       </article>
@@ -92,11 +112,16 @@
       <article class="photo">
 
         <a class="photo-link bridge" href="#"></a>
-        <h2 class="photo__title">Мост дьявола</h2>
-        <p class=" photo__author">Автор фото: Антон</p>
-        <div class="photo__like">
-          <button class="photo__like-btn">Лайк!</button>
-          <span class="photo__like-count">254</span>
+
+        <div class="photo__wrap">
+
+          <h2 class="photo__title">Мост дьявола</h2>
+          <p class=" photo__author">Автор фото: Антон</p>
+          <div class="photo__like">
+            <button class="photo__like-btn">Лайк!</button>
+            <span class="photo__like-count">254</span>
+          </div>
+
         </div>
 
       </article>
@@ -120,6 +145,8 @@
     </section>
 
   </main>
+
+
 
 
   <footer class="page-footer" role="contentinfo">

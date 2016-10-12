@@ -17,28 +17,32 @@
 
   <header class="page-header">
 
-    <div class="page-header__logo btn __mobile-menu">
-      <img src="http://placehold.it/100x80" alt="Logo City of Sedona">
-    </div>
-
     <nav class="main-menu  main-menu__closed" role="navigation">
 
-      <div class="main-menu__items">
-        <li class="main-menu__item"><a href="#">                           Главная       </a></li>
+      <ul class="main-menu__items">
+        <li class="main-menu__item  main-menu__item--active"><a href="#">  Главная       </a></li>
         <li class="main-menu__item"><a href="#">                           Фото и видео  </a></li>
-        <li class="main-menu__item   main-menu__item--active"><a href="#"> Форма отзыва  </a></li>
+        <li class="main-menu__item"><a href="#">                           Форма отзыва  </a></li>
         <li class="main-menu__item"><a href="#">                           HTML academy  </a></li>
-      </div>
+        <button class="btn main-menu__btn-close">Скрыть меню</button>
+      </ul>
 
     </nav>
+
+    <div class="page-header__mobile-panel">
+
+      <img class="page-header__logo" src="img/logo-sedona-mobile.svg" alt="Logo City of Sedona">
+      <button class="btn page-header__btn-open">Показать меню</button>
+
+    </div>
 
   </header>
 
   <main class="page-container" role="main">
 
-    <section class="intro" role="complementary">
+    <section class="intro mini" role="complementary">
 
-      <div class="intro__img  mini"></div>
+      <div class="intro__img"></div>
       <div class="intro__description">
         <h1 class="description__title" role="definition">Оставьте свой отзыв</h1>
         <p class="description__content">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
@@ -48,46 +52,62 @@
 
     <form class="form-feedback">
 
-      <fieldset class="form-feedback__fieldset">
-        <h2 class="form-feedback__title">Представьтесь, пожалуйста</h2>
+      <fieldset class="form-feedback__fieldset  introduce">
+        <h2 class="form-feedback__title">Представьтесь</h2>
 
-        <label class="form-feedback__label">Имя:
-          <input class="form-feedback__input" type="text" name="firstname" placeholder="Петр">
-        </label>
+        <div class="form-feedback__item">
+          <label class="form-feedback__label" for="form-feedback__name">Имя:</label>
+          <input class="form-feedback__input" id="form-feedback__name" type="text" name="firstname" placeholder="Петр">
+        </div>
 
-        <label class="form-feedback__label">Фамилия:
-          <input class="form-feedback__input" type="text" name="surname" placeholder="Иванов">
-        </label>
+        <div class="form-feedback__item">
+          <label class="form-feedback__label" for="form-feedback__surname">Фамилия:</label>
+          <input class="form-feedback__input" id="form-feedback__surname" type="text" name="surname" placeholder="Иванов">
+        </div>
 
-        <label class="form-feedback__label">Отчество:
-          <input class="form-feedback__input" type="text" name="patronymic" placeholder="Александрович">
-        </label>
+        <div class="form-feedback__item">
+          <label class="form-feedback__label" for="form-feedback__patronymic">Отчество:</label>
+          <input class="form-feedback__input" id="form-feedback__patronymic" type="text" name="patronymic" placeholder="Александрович">
+        </div>
+
 
       </fieldset>
 
 
-      <fieldset class="form-feedback__fieldset">
+      <fieldset class="form-feedback__fieldset  contacts">
         <h2 class="form-feedback__title">Контактная информация:</h2>
 
-        <label class="form-feedback__label  form-feedback__input-tel">
-          Контактный телефон:
-          <div class="input-wrapper  tel">
-            <input class="form-feedback__input" type="tel" name="tel" placeholder="Введите телефон">
-          </div>
-        </label>
-        <p class="form-feedback__error--tel">Ошибка, перепроверьте номер</p>
+        <div class="form-feedback__item">
 
-        <label class="form-feedback__label  form-feedback__input-email">
-          Электронная почта:
-          <div class="input-wrapper  email">
-            <input class="form-feedback__input" type="email" name="email" placeholder="Введите e-mail">
+          <label class="form-feedback__label  form-feedback__input-tel" for="form-feedback__phone">
+            телефон:
+          </label>
+
+          <div class="input-wrapper  tel">
+            <input class="form-feedback__input" type="tel" id="form-feedback__phone" name="tel" placeholder="Введите телефон">
           </div>
-        </label>
+
+          <p class="form-feedback__error--tel">Ошибка, перепроверьте номер</p>
+
+        </div>
+
+        <div class="form-feedback__item">
+
+          <label class="form-feedback__label  form-feedback__input-email" for="form-feedback__email">
+            Электронная почта:
+          </label>
+
+          <div class="input-wrapper  email">
+            <input class="form-feedback__input" id="form-feedback__email" type="email" name="email" placeholder="Введите e-mail">
+          </div>
+
+        </div>
+
 
       </fieldset>
 
 
-      <fieldset class="form-feedback__fieldset">
+      <fieldset class="form-feedback__fieldset  impression">
         <h2 class="form-feedback__title">Ваше общее впечатление:</h2>
 
         <label class="form-feedback__label--radio">
@@ -117,7 +137,7 @@
       </fieldset>
 
 
-      <fieldset class="form-feedback__fieldset">
+      <fieldset class="form-feedback__fieldset  attraction">
         <h2 class="form-feedback__title">Посещенные достопримечательности:</h2>
 
         <label class="form-feedback__label--checkbox">
@@ -159,7 +179,7 @@
        </fieldset>
 
 
-      <fieldset class="form-feedback__fieldset">
+      <fieldset class="form-feedback__fieldset    emotions">
         <h2 class="form-feedback__title  align-left">Опишите свои эмоции:</h2>
 
         <textarea class="feedback-form__textarea" name="comment" cols="25" rows="5" placeholder="Опишите подробно все свои восторги"></textarea>
@@ -170,7 +190,6 @@
 
      </form>
   </main>
-
 
   <footer class="page-footer" role="contentinfo">
 
