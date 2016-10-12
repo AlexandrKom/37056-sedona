@@ -87,7 +87,9 @@
 
   .photos {
     margin: 0 8%;
-    @include clear;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 
   .photo-link {
@@ -111,6 +113,10 @@
 
   .photo__like-btn {
     margin-right: 6px;
+  }
+
+  .photo:first-of-type {
+    width: 100%;
   }
 
   .photo:not(:first-child) {

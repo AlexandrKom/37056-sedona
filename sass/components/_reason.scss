@@ -47,12 +47,11 @@
 
   .reason {
     padding: 0;
-    @include clear;
+    display: flex;
   }
 
   .reason__wrapper-left,
   .reason__wrapper-rigth {
-    float: left;
     width: 100/3+%;
     padding: 43px 20px 0 20px;
     line-height: 28px;
@@ -60,7 +59,7 @@
   }
 
   .reason__wrapper-rigth {
-    float: right;
+    order: 2;
   }
 
   .reason__title {
@@ -82,5 +81,20 @@
     width: 100/3*2+%;
     margin: 0;
   }
+
+}
+
+//********* desktop 1000px
+
+@media (min-width: 1000px) {
+
+.reason__wrapper-left,
+.reason__wrapper-rigth {
+  padding: 52px 20px 0 20px;
+
+  .reason__title {
+
+  }
+}
 
 }

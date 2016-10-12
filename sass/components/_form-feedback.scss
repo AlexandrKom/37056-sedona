@@ -76,15 +76,16 @@
 
 .form-feedback__input-tel,
 .form-feedback__input-email {
+  float: none;
   text-indent: 20px;
   margin-bottom: 10px;
 }
 
-input-wrapper {
+.input-wrapper {
   position: relative;
 }
 
-input-wrapper::after{
+.input-wrapper::after {
   position: absolute;
   top: 0;
   right: 0;
@@ -92,6 +93,17 @@ input-wrapper::after{
   width: 57px;
   height: 57px;
   content: "";
+}
+
+.input-wrapper.tel::after {
+  background: url(../img/icon-phone.svg) no-repeat;
+  background-color: #e6e6e6;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.input-wrapper.email::after {
+  background: url(../img/icon-mail.svg) no-repeat;
   background-color: #e6e6e6;
   background-repeat: no-repeat;
   background-position: center;
@@ -159,7 +171,7 @@ input-wrapper::after{
 }
 
 .form-feedback__fieldset.impression {
-   margin-bottom: 10px;
+   margin-bottom: 15px;
 }
 
 .form-feedback__fieldset.impression  .title {
@@ -196,6 +208,7 @@ input-wrapper::after{
 .form-feedback__btn {
   display: block;
   margin: 0 20px;
+  margin-bottom: 38px;
 }
 
 
@@ -206,35 +219,43 @@ input-wrapper::after{
 
   // block position
   .form-feedback {
-    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     margin: 0 8%;
-    @include clear;
   }
 
   .form-feedback__fieldset.introduce {
-    float: right;
+    order: 2;
     width: 50%;
+  }
+
+  .form-feedback__fieldset.contacts {
+    order: 3;
+    width: 100%;
   }
 
   .form-feedback__fieldset.impression {
-    position: absolute;
-    float: left;
-    top: 0;
-    left: 0;
+    order: 1;
     width: 50%;
   }
 
-  .form-feedback__fieldset.attraction,
-  .form-feedback__fieldset.emotions,
-  .form-feedback__fieldset.contacts {
+  .form-feedback__fieldset.attraction {
+    order: 4;
     width: 100%;
-    float: left;
+    margin-top: 62px;
+  }
+
+  .form-feedback__fieldset.emotions {
+    order: 5;
+    width: 100%;
   }
 
   .form-feedback__btn {
-    float: left;
-    width: 50%;
+    margin-left: 5px;
     position: relative;
+    order: 6;
+    width: 50%;
   }
 
   // block style
@@ -328,7 +349,8 @@ input-wrapper::after{
   .form-feedback__fieldset.attraction {
     padding-top: 0;
     font-size: 0;
-    margin-bottom: 47px;
+    margin-top: 0;
+    margin-bottom: 63px;
 
 
     .form-feedback__title {
@@ -338,17 +360,19 @@ input-wrapper::after{
       background: #fff;
     }
 
-    .form-feedback__label--checkbox {
-      float: left;
-      width: 50%;
-      margin-bottom: 33px;
+    .attraction__conteiner {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 17px;
+    }
 
-      &:nth-child(odd) {
-        padding-left: 5%;
-      }
+    .form-feedback__label--checkbox {
+      flex-basis: 35%;
 
       &:nth-child(even) {
-        padding-left: 13%;
+        margin-left: 8%;
       }
     }
   }
@@ -372,9 +396,10 @@ input-wrapper::after{
   }
 
   .btn.form-feedback__btn {
+    position: relative;
     width: 49%;
     margin-left: 5px;
-    position: relative;
+    margin-bottom: 60px;
 
     &::after {
       display: block;
@@ -426,7 +451,7 @@ input-wrapper::after{
   }
 
   .form-feedback__fieldset.contacts {
-    @include clear;
+
     margin-bottom: 47px;
 
     .form-feedback__title {
@@ -448,6 +473,8 @@ input-wrapper::after{
 
     .form-feedback__item {
       float: left;
+      display: flex;
+      align-items: center;
       width: 50%;
     }
 
@@ -456,7 +483,7 @@ input-wrapper::after{
     }
 
     .input-wrapper {
-      float: left;
+
       width: 64%;
     }
 
@@ -469,17 +496,21 @@ input-wrapper::after{
 
 
   .form-feedback__fieldset.impression {
-    margin-left: 21px;
+
 
     .form-feedback__title {
       padding-left: 81px;
       letter-spacing: 0.22px;
     }
+
+    .form-feedback__label--radio {
+      padding-left: 28px;
+    }
   }
 
   .form-feedback__fieldset.attraction {
     font-size: 0;
-    margin-bottom: 44px;
+    margin-bottom: 75px;
 
 
     .form-feedback__title {
@@ -487,15 +518,22 @@ input-wrapper::after{
       line-height: 26px;
     }
 
+    .attraction__conteiner {
+      justify-content: space-between;
+    }
+
     .form-feedback__label--checkbox {
-      width: auto;
+      flex-basis: auto;
+      margin: 0;
 
       &:nth-child(even) {
         padding-left: 0%;
+        margin: 0;
       }
 
       &:nth-child(odd) {
         padding-left: 0%;
+        margin: 0;
       }
     }
   }
@@ -507,6 +545,7 @@ input-wrapper::after{
   .btn.form-feedback__btn {
     width: 47.5%;
     margin-left: 25px;
+    margin-bottom: 64px;
   }
 
 }

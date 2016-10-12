@@ -33,16 +33,16 @@
 @media (min-width: 768px) {
 
   .reasons {
-    min-height: 256px;
-    font-size: 0;
+    display: flex;
+    flex-direction: row;
     padding: 0;
 
     .reason {
-      display: inline-block;
-      vertical-align: top;
+      display: block;
       width: 100/3+%;
-      border-bottom: none;
-      padding: 42px 10px 0 25px;
+      min-height: 256px;
+      padding: 45px 35px 0 35px;
+      border: none;
       line-height: 27px;
 
       &:nth-of-child(2){
@@ -51,7 +51,8 @@
 
       .reason__title {
         color: #000;
-        padding-bottom: 7px;
+        padding-bottom: 4px;
+        word-spacing: 300px;
       }
 
       .reason__number {
@@ -61,12 +62,25 @@
 
       .reason__content {
         font-size: $base-font-size+px;
-        padding: 0 10px 42px 10px;
+        padding: 0;
       }
 
     }
 
 
+  }
+
+}
+
+//********* desktop 1000px
+
+@media (min-width: 1000px) {
+
+  .reasons {
+
+    .reason {
+
+    }
   }
 
 }

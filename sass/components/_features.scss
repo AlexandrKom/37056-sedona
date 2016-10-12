@@ -38,9 +38,11 @@
 @media (min-width: 768px) {
 
   .features {
+    flex-direction: row;
     min-height: 330px;
     margin: 0;
     font-size: 0;
+    display: flex;
   }
 
   .features__item {
@@ -58,6 +60,7 @@
 
   .souvenirs {
     background: url(../img/icon-gift.svg) no-repeat center top 60px;
+    order: 3;
   }
 
   .food {

@@ -107,6 +107,15 @@
     &:last-of-type {
       box-shadow: none;
     }
+
+    &:hover {
+      background-color: transparent;
+    }
+
+    & a:hover {
+      color: #9ac2db;
+    }
+
     }
 
   .main-menu__item:not(:last-child),

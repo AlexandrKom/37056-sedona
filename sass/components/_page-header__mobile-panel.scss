@@ -15,6 +15,7 @@
   width: 100px;
   height: 83px;
   margin: 0 auto 0 -50px;
+  background: url(../img/logo-sedona-mobile.svg) no-repeat center top;
 }
 
 .page-header__btn-open {
@@ -42,7 +43,8 @@
 }
 
 
-@media (min-width: 750px) {
+//********* tablet 768px
+@media (min-width: 768px) {
 
   .page-header__mobile-panel {
     position: static;
@@ -51,6 +53,15 @@
 
   .page-header__btn-open {
     display: none;
+  }
+
+}
+
+//********* desktop 1000px
+@media (min-width: 1000px) {
+
+  .page-header__mobile-panel {
+
   }
 
 }
